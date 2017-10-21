@@ -9,12 +9,12 @@ REV_STRINGS = [
     ("Once upon a time!", "time! a upon Once"),
     ("Hello goodbye, is the saying", "saying the is goodbye, Hello"),
     ("Penguins are pretty cool", "cool pretty are Penguins"),
-    ("Walk a mile. In your shoes", "shoes your In. mile a Walk")
+    ("Walk a mile. In your shoes", "shoes your In mile. a Walk")
 ]
 
 
-@pytest.mark.parametrize('str, result', REV_STRINGS)
-def test_reverse_words(n, result):
+@pytest.mark.parametrize('n, result', REV_STRINGS)
+def test_reversed_words(n, result):
     """Test if series imports."""
     from reversed_words_6kyu import reversed_words
-    assert reversed_words(str) == result
+    assert reversed_words(n) == result
