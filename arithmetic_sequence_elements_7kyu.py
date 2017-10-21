@@ -1,10 +1,10 @@
 """Kata: Arithmetic Sequence - Return set of numbers defined by
 length (n), step(r), and start number(a)
 
-#1 Best Practices Solution by CrazyMerlyn & others
+#1 Best Practices Solution by zebulan
 
-def opposite(number):
-    return -number
+def arithmetic_sequence_elements(a, r, n):
+    return ', '.join(str(a + b * r) for b in xrange(n))
 """
 
 
