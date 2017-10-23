@@ -43,3 +43,9 @@
 - **Module**: `descending_order_7kyu.py`
 - **Tests**: `test_descending_order_7kyu.py`
 - **URL**: [challenge url](https://www.codewars.com/kata/5467e4d82edf8bbf40000155)
+
+** Sum of Nth Terms (7th kyu)**
+
+- **Module**: `sum_of_nth_terms.py`
+- **Tests**: `test_sum_of_nth_terms.py`
+- **URL**: [challenge url](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python)
