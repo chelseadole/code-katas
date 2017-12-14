@@ -26,11 +26,11 @@ def test_pp_with_zero_balance():
     assert proper_parenthetics('(())()') == 0
 
 
-# def test_pp_with_neg_1_imbalance():
-#     """Test broken input string, closing paren has no opener."""
-#     assert proper_parenthetics('())()') == -1
+def test_pp_with_neg_1_imbalance():
+    """Test broken input string, closing paren has no opener."""
+    assert proper_parenthetics('())()') == -1
 
 
-# def test_pp_with_pos_1_imbalance():
-#     """Test open input string, opening paren has no closer."""
-#     assert proper_parenthetics('()(())(') == 1
+def test_pp_with_pos_1_imbalance():
+    """Test open input string, opening paren has no closer."""
+    assert proper_parenthetics('()(())(') == 1
