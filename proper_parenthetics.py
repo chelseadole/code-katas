@@ -1,16 +1,16 @@
 """Proper parenthetics extra credit kata."""
 
-from _priority_que import Priority
+from _que_structure import Q
 
 
 def proper_parenthetics(string):
     """Return if parentheses are matching or not."""
     if isinstance(string, str):
-        paren_q = Priority(list(string))
+        paren_q = Q(list(string))
         opening_parens = 0
         closing_parens = 0
         while paren_q.size() > 0:
-            i = paren_q.dequeue().val
+            i = paren_q.dequeue().data
             if i != '(' and i != ')':
                 raise TypeError('proper_parenthetics takes only parentheses.')
             if i == '(' and closing_parens == 0:
