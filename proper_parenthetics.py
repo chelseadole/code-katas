@@ -4,11 +4,11 @@
 def proper_parenthetics(string):
     """Return if parentheses are matching or not."""
     if isinstance(string, str):
-        paren_list = list(string)
+        paren_q = Queue(list(string))
         opening_parens = 0
         closing_parens = 0
-        for i in paren_list:
-            # import pdb; pdb.set_trace()
+        while paren_q.size() > 0:
+            i = paren_q.dequeue().val
             if i != '(' and i != ')':
                 raise TypeError('proper_parenthetics takes only parentheses.')
             if i == '(' and closing_parens == 0:
@@ -24,3 +24,4 @@ def proper_parenthetics(string):
         if opening_parens - closing_parens > 0:
             return 1
     raise TypeError('proper_parenthetics takes only strings')
+
