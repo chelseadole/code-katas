@@ -1,10 +1,12 @@
 """Proper parenthetics extra credit kata."""
 
+from _priority_que import Priority
+
 
 def proper_parenthetics(string):
     """Return if parentheses are matching or not."""
     if isinstance(string, str):
-        paren_q = Queue(list(string))
+        paren_q = Priority(list(string))
         opening_parens = 0
         closing_parens = 0
         while paren_q.size() > 0:
