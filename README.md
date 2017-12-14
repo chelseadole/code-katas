@@ -55,3 +55,9 @@
 - **Module** `proper_parenthetics.py`
 - **Tests**: `test_proper_parenthetics.py`
 - **Other**: imports my python Queue from `_que_structure.py`
+
+** Sort Cards**
+
+- **Module**: `sort_cards.py`
+- **Tests**: `test_sort_cards.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/sort-deck-of-cards/python)
