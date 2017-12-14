@@ -2,6 +2,7 @@
 
 import pytest
 from sort_cards import sort_cards
+import random
 
 sorted_deck = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K']
 
@@ -31,7 +32,9 @@ def test_sort_cards_list_all_letters():
     assert sort_cards(['J', 'K', 'A', 'Q']) == ['A', 'J', 'Q', 'K']
 
 
-def test_cards_mixed_lets_and_nums():
-    """Sort_card on list that is mixed letters and numbers."""
-    pre_sort = ['3', '9', 'A', '5', 'T', '8', '2', '4', 'Q', '7', 'J', '6', 'K']
-    assert sort_cards(pre_sort) == sorted_deck
+@pytest.mark.parameterize("shuffled_deck, output", [
+    (random.shuffle(sorted_deck), sorted_deck) for i in range(100)
+])
+def parameterized_shuffled_decks(shuffled_deck, output):
+    """100 randomly shuffled decks."""
+    assert sort_cards(shuffled_deck) == output
