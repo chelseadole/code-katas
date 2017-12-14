@@ -49,3 +49,9 @@
 - **Module**: `sum_of_nth_terms.py`
 - **Tests**: `test_sum_of_nth_terms.py`
 - **URL**: [challenge url](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python)
+
+** Proper Parenthetics**
+
+- **Module** `proper_parenthetics.py`
+- **Tests**: `test_proper_parenthetics.py`
+- **Other**: imports my python Queue from `_que_structure.py`
